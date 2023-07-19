@@ -19,7 +19,7 @@ pipeline {
     }
     stage('Start container') {
       steps {
-        sh 'docker compose up -d --no-color --wait'
+        sh 'docker compose up -f docker-compose.unibuild.yml -d --no-color --wait'
         sh 'docker compose ps'
       }
     }
