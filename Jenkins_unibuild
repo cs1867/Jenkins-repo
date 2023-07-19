@@ -19,8 +19,8 @@ pipeline {
   }
   post {
     always {
-      sh 'docker compose down --remove-orphans -v'
-      sh 'docker compose ps'
+      sh 'docker compose -f docker-compose.unibuild.yml down --remove-orphans -v'
+      sh 'docker compose -f docker-compose.unibuild.yml  ps'
     }
   }
 }
