@@ -1,4 +1,5 @@
 # perfSONAR Testpoint
+# add comments here
 
 FROM centos:centos7
 
